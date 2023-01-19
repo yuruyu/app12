@@ -1,0 +1,13 @@
+import streamlit as st
+import random
+
+# レシピのリストを用意します
+recipes = ["スパゲティ", "ハンバーグ", "オムライス", "カレー", "トマト煮込みチキン"]
+
+# スタート画面を作成します
+st.title("夕飯のレシピアプリ")
+st.write("今日の夕飯は何にしよう？")
+
+# ボタンを作成し、クリックするとランダムにレシピを表示します
+if st.button("ランダムにレシピを表示"):
+    st.write("今日の夕飯は... " + random.choice(recipes) + " にしよう！")
